@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 .hero {
     border-radius: 15px;
-    background: url('assets/images/pexels-enginakyurt-2684375.jpg') center/cover no-repeat;
+    background: url('assets/images/pexels-enginakyurt-2684375.webp') center/cover no-repeat;
     height: 320px;
     text-align: center;
     color: white;
@@ -161,15 +161,15 @@ a.cta-button:hover {
 }
 
 #garda::before {
-    background-image: url("./assets/images/pexels-lorenzo-160659027-30858298.jpg");
+    background-image: url("./assets/images/pexels-lorenzo-160659027-30858298.webp");
 }
 
 #croatia::before {
-    background-image: url("./assets/images/pexels-goran-vrakela-64248-245121.jpg");
+    background-image: url("./assets/images/pexels-goran-vrakela-64248-245121.webp");
 }
 
 #upper-adria::before {
-    background-image: url("./assets/images/pexels-chaitaastic-1796736.jpg");
+    background-image: url("./assets/images/pexels-chaitaastic-1796736.webp");
 }
 
 .boat {
