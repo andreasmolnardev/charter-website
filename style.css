@@ -160,6 +160,11 @@ a.cta-button:hover {
     background-size: cover;
 }
 
+.card .title{
+    font-size: 24px;
+    font-weight: 500;
+}
+
 #garda::before {
     background-image: url("./assets/images/pexels-lorenzo-160659027-30858298.webp");
 }
