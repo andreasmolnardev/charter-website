@@ -26,20 +26,20 @@ body {
     padding-inline: 10px;
 }
 
-p{
+p {
     padding: 0;
     margin: 0;
 }
 
-h2{
+h2 {
     font-weight: 650;
 }
 
-h3{
+h3 {
     font-weight: 500;
 }
 
-:is(h2, h3):hover{
+:is(h2, h3):hover {
     color: var(--accent-color);
 }
 
@@ -50,20 +50,29 @@ h3{
     text-align: center;
 }
 
+.includes-gap {
+    display: flex;
+    gap: 10px;
+}
+
 .vertical {
     flex-direction: column;
 }
 
-section > :not(h2){
+section> :not(h2) {
     padding-inline: 10px;
 }
 
 header nav {
+    display: flex;
     width: calc(100% - 30px);
     padding: 0px 15px 15px 15px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header nav :not(img) {
+    display: none;
 }
 
 header nav .logo {
@@ -163,36 +172,30 @@ a.cta-button:hover {
     background-image: url("./assets/images/pexels-chaitaastic-1796736.jpg");
 }
 
-.boat-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
 .boat {
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
 
-.boat:hover h3{
+.boat:hover h3 {
     font-weight: 550;
     color: var(--accent-color);
 }
 
-.boat .gallery{
+.boat .gallery {
     border-radius: 15px;
     height: 180px;
     max-width: calc(100% - 10px);
 }
 
-.boat .gallery img:not([data-index = "0"]){
+.boat .gallery img:not([data-index="0"]) {
     display: none;
 }
 
-.boat .gallery img{
+.boat .gallery img {
     border-radius: 15px;
-   height: 100%;
-   width: 100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -202,12 +205,12 @@ a.cta-button:hover {
     padding-left: 0;
 }
 
-.tree li{
+.tree li {
     display: block;
     position: relative;
 }
 
-.tree li li{
+.tree li li {
     padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
 }
 
@@ -217,7 +220,7 @@ a.cta-button:hover {
     padding-left: 0;
 }
 
-.boat .price{
+.boat .price {
     justify-self: end;
     align-self: flex-end;
 }
@@ -232,7 +235,20 @@ footer {
     margin-inline: -15px;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    header nav :not(img) {
+        display: flex;
+    }
+
+    .boat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
 }
