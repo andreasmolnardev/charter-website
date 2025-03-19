@@ -162,7 +162,7 @@ a.cta-button:hover {
 
 .card .title{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 500 ;
 }
 
 #garda::before {
@@ -188,9 +188,22 @@ a.cta-button:hover {
 }
 
 .boat .gallery {
+    position: relative;
     border-radius: 15px;
     height: 180px;
     max-width: calc(100% - 10px);
+}
+
+.boat .gallery span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+    z-index: 1;
+}
+
+.boat .gallery:hover span{
+    display: flex;
 }
 
 .boat .gallery img:not([data-index="0"]) {
