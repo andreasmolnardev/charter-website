@@ -66,3 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+  document.getElementById("garda").addEventListener('click', () => {
+    window.location.href = "./gardasee-boot-mieten"
+  })
