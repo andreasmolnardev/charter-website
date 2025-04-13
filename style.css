@@ -71,7 +71,7 @@ header nav {
     align-items: center;
 }
 
-header nav > :not(:has(img)) {
+header nav > :not(:is(:has(img), img)) {
     display: none;
 }
 
