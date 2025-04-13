@@ -17,8 +17,14 @@
   <!-- Robots -->
   <meta name="robots" content="index, follow">
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.fluenticon.com/icon.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preload" href="https://cdn.fluenticon.com/icon.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.fluenticon.com/icon.min.css">
+  </noscript>
+
 
   <script type="application/ld+json">
     {
@@ -44,7 +50,7 @@
     }
     </script>
 
-    
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
